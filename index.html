@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Hello PWA</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="manifest" href="/manifest.json">
+
+</head>
+
+<body>
+    <header>
+        <h1>
+            Projek Pertama PWA</h1>
+        <img src="img/logo.jpg" alt="#" width="150">
+    </header>
+
+    <hr>
+
+    <main>
+        <h3>Data List</h3>
+
+        <select id="job_select">
+            <option value="all">Semua</option>
+        </select>
+
+        <div id="data">
+            <h1>Selamat Datang di Welcome</h1>
+            <h2>Loading...</h2>
+        </div>
+
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.8/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.8/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyCIPljdmSdVmO60f88cH0H1kb2kYZp9i5Q",
+            authDomain: "my-first-pwa-d795f.firebaseapp.com",
+            projectId: "my-first-pwa-d795f",
+            storageBucket: "my-first-pwa-d795f.appspot.com",
+            messagingSenderId: "631011542238",
+            appId: "1:631011542238:web:6678c2a7011c1b8180ae4f",
+            measurementId: "G-CVBFWT3XMK"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
+</body>
+
+</html>
